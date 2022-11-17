@@ -489,7 +489,7 @@ function autoFarmJuniors(tool2use)
                             end)
                             task.wait()
                             --print(v.Name)
-                            Chareee:FindFirstChild("HumanoidRootPart").CFrame = v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,5,0)
+                            Chareee:FindFirstChild("HumanoidRootPart").CFrame = v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,-5,0)
                                 if v.Humanoid.Health <= 0 then
                                     wait(0.1)
                                     countingKills = countingKills + 1
