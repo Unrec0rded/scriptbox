@@ -45,15 +45,11 @@ end
 UDP()
 print(unpack(_G.Table1))
 
-function Segarkan()
-    UDP()
-    unpack(_G.Table1)
-end
 
-
-local invdrpd = tab:Dropdown("Tool Select (For Autofarm)", {Segarkan()}, function(selected)
+local invdrpd = tab:Dropdown("Tool Select (For Autofarm)", {unpack(_G.Table1)}, function(selected)
     selectedTool = selected
     print("Dropdown element selected: "..selected)
+    UDP()
 
  end, true) -- Args(<string> Name, <table?> Options, <function?> Callback, <boolean?> ShowNoneOption)
 
