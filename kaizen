@@ -39,7 +39,8 @@ toggle:SetToggle(false)
 _G.Table1 = {}
 function UDP(--[[Table1]])
     for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do 
-        table.insert(_G.Table1, v.Name)
+        table.remove(_G.Table1, v.Name)
+        table.insert(_G.Table1, v.Name)        
     end
 end
 UDP()
