@@ -43,13 +43,12 @@ function UDP(--[[Table1]])
     end
 end
 UDP()
-print(unpack(_G.Table1))
+--print(unpack(_G.Table1))
 
 
 local invdrpd = tab:Dropdown("Tool Select (For Autofarm)", {unpack(_G.Table1)}, function(selected)
     selectedTool = selected
     print("Dropdown element selected: "..selected)
-    UDP()
 
  end, true) -- Args(<string> Name, <table?> Options, <function?> Callback, <boolean?> ShowNoneOption)
 
